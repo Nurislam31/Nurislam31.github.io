@@ -30,6 +30,20 @@ const wts = [
 	  price: 4200,
 	},
   ];
+
+  function createObject(title, author, image, price) {
+	const object = {
+		title: title,
+		author: author,
+		image: image,
+		price: price
+	}
+
+	return object
+  }
+
+   const temp1 = createObject("Opportunity","Sakan Begalinov","OP.jpeg", 4600)
+   console.log(temp1);
   
   function avg(wts){ 
     let sum = 0; 
@@ -38,6 +52,7 @@ const wts = [
     } 
     return sum / wts.length; 
 } 
+	
 
   const wtList = document.getElementById("wt-list");
   
