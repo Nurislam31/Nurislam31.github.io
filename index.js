@@ -31,7 +31,7 @@ const wts = [
 	},
   ];
 
-  function createObject(title, author, image, price) {
+  function WandTObject(title, author, image, price) {
 	const object = {
 		title: title,
 		author: author,
@@ -42,7 +42,7 @@ const wts = [
 	return object
   }
 
-   const temp1 = createObject("Opportunity","Sakan Begalinov","OP.jpeg", 4600)
+   const temp1 = WandTObject("Opportunity","Sakan Begalinov","OP.jpeg", 4600)
    console.log(temp1);
   
   function avg(wts){ 
